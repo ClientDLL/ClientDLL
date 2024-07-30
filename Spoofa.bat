@@ -1,0 +1,22 @@
+@echo off
+reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductId /t REG_SZ /d %random:~-4%-41Z79-03200-S6%random:~-4% /f > NUL 2>&1
+sc stop FairplayKD
+sc delete FairplayKD
+sc stop FairplayKD1
+sc delete FairplayKD1
+sc stop FairplayKD2
+sc delete FairplayKD2
+sc stop FairplayKD3
+sc delete FairplayKD3
+sc stop FairplayKD4
+sc delete FairplayKD4
+sc stop FairplayKD5
+sc delete FairplayKD5
+sc stop FairplayKD6
+sc delete FairplayKD6
+sc stop FairplayKD7
+sc delete FairplayKD7
+sc stop FairplayKD8
+sc delete FairplayKD8
+sc stop FairplayKD9
+sc delete FairplayKD9
